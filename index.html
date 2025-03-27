@@ -4,41 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Subjects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
+            color: white;
             text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            padding: 20px;
+            font-size: 32px;
+            font-weight: 600;
+            background: #111;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+            text-transform: uppercase;
         }
         .container {
-            max-width: 800px;
+            max-width: 1100px;
             margin: 50px auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            padding: 20px;
         }
         .subject {
-            background-color: #007BFF;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
+            background: #111;
+            padding: 25px;
+            border-radius: 15px;
             text-decoration: none;
-            font-size: 18px;
-            transition: 0.3s;
+            font-size: 22px;
+            font-weight: 500;
+            color: cyan;
+            text-shadow: 0 0 5px cyan, 0 0 10px cyan;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+            position: relative;
         }
         .subject:hover {
-            background-color: #0056b3;
+            background: #222;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
         }
     </style>
 </head>
 <body>
-    <h1>College Subjects</h1>
+    <div class="header">College Subjects</div>
     <div class="container">
-        <a href="pdfs.html?subject=Mathematics" class="subject">Mathematics</a>
-        <a href="pdfs.html?subject=Physics" class="subject">Physics</a>
-        <a href="pdfs.html?subject=Chemistry" class="subject">Chemistry</a>
-        <a href="pdfs.html?subject=Computer Science" class="subject">Computer Science</a>
-        <a href="pdfs.html?subject=Biology" class="subject">Biology</a>
+        <a href="pdfs.html?subject=Mathematics" class="subject">📘 Mathematics</a>
+        <a href="pdfs.html?subject=Electrical" class="subject">⚡ Electrical</a>
+        <a href="pdfs.html?subject=Chemistry" class="subject">⚗️ Chemistry</a>
+        <a href="pdfs.html?subject=Thermal" class="subject">🔥 Thermal</a>
+        <a href="pdfs.html?subject=EVS" class="subject">🌿 EVS</a>
     </div>
 </body>
 </html>
