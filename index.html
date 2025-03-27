@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Subjects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .subject {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .subject:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>College Subjects</h1>
+    <div class="container">
+        <a href="pdfs.html?subject=Mathematics" class="subject">Mathematics</a>
+        <a href="pdfs.html?subject=Physics" class="subject">Physics</a>
+        <a href="pdfs.html?subject=Chemistry" class="subject">Chemistry</a>
+        <a href="pdfs.html?subject=Computer Science" class="subject">Computer Science</a>
+        <a href="pdfs.html?subject=Biology" class="subject">Biology</a>
+    </div>
+</body>
+</html>
